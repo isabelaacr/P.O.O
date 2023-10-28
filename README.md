@@ -16,3 +16,16 @@ Objetos de classes diferentes podem ser tratados como objetos de classe comum.
 
 #### Referências:
 medium.com/introdução-à-programação-orientada-a-objetos-7ed68508764e
+
+## Relações entre objetos
+### Associação
+Relacionamento entre dois ou mais objetos que estão conectados por meio de suas referências de objetos.
+
+### Dependência
+Uma classe depende da outra. Se uma mudar, a outra também terá de mudar.
+
+### Composição
+Um objeto é responsável pelos objetos contidos nele.
+
+### Agregação
+Parecido com composição, no entanto, o objeto principal não é responsável pelos objetos contidos nele.
