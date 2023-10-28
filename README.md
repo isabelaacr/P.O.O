@@ -14,8 +14,6 @@ Subclasses herdam atributos e métodos já existentes.
 ### 4. Polimorfismo
 Objetos de classes diferentes podem ser tratados como objetos de classe comum.
 
-#### Referências:
-medium.com/introdução-à-programação-orientada-a-objetos-7ed68508764e
 
 ## Relações entre objetos
 ### Associação
@@ -29,3 +27,6 @@ Um objeto é responsável pelos objetos contidos nele.
 
 ### Agregação
 Parecido com composição, no entanto, o objeto principal não é responsável pelos objetos contidos nele.
+
+#### Referências:
+medium.com/introdução-à-programação-orientada-a-objetos-7ed68508764e
