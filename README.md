@@ -190,5 +190,5 @@ Um objeto é responsável pelos objetos contidos nele.
 Parecido com composição, no entanto, o objeto principal não é responsável pelos objetos contidos nele.
 
 #### Referências:
-Conteúdo disponibilizado pela disciplina de Paradigmas de Programação
-medium.com/introdução-à-programação-orientada-a-objetos-7ed68508764e
+- Conteúdo disponibilizado pela disciplina de Paradigmas de Programação
+- medium.com/introdução-à-programação-orientada-a-objetos-7ed68508764e
