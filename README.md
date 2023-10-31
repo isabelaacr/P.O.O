@@ -1,5 +1,5 @@
 # P.O.O
-Notas acerca da Programação Orientada a Objetos
+Programação Orientada a Objetos
 
 ## Ambiente de execução
 
