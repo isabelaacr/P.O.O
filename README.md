@@ -1,5 +1,5 @@
 # P.O.O
-Programação Orientada a Objetos
+Programação Orientada a Objetos em Java
 
 ## Ambiente de execução
 
