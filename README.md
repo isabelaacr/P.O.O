@@ -125,7 +125,7 @@ class Student extends Person {
 ```
 
 ### 3. Herança
-Subclasses herdam atributos e métodos já existentes.
+Subclasses herdam atributos e métodos já existentes. Construtor da superclasse, é chamado antes do construtor da classe derivada.
 
 - Lembrar de diferenciar suas relações
 "Is-a" (é um): refere-se a generalização/especialização)
@@ -176,6 +176,46 @@ class Main {
 ### 4. Polimorfismo
 Objetos de classes diferentes podem ser tratados como objetos de classe comum.
 
+```Java
+class Figura {
+  public void desenha() {
+    System.out.println("Desenhando Figura");
+  }
+}
+
+class Triangulo extends Figura {
+  public void desenha() {
+    System.out.println("Desenhando Triangulo");
+  }
+}
+
+class Retangulo extends Figura {
+  public void desenha() {
+    System.out.println("Desenhando Retangulo");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Figura figs[] = {
+      new Triangulo(),
+      new Triangulo(),
+      new Retangulo(),
+      new Retangulo() 
+    };
+    for (Figura f : figs)
+      f.desenha();
+  }
+}
+```
+#### Polimorfismo estático
+- É determinado em tempo de compilação
+- Sobrecarga (overloading), paramétrico
+
+#### Polimorfismo dinâmico
+- É determinado em tempo de execução
+- Sobrescrita (overriding)
+  
 ```Java
 class Figura {
   public void desenha() {
