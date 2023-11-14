@@ -173,6 +173,87 @@ class Main {
 }
 ```
 
+#### Herança: extends Thread
+- Método run especifica tarefa a ser executada por uma thread
+- Criação de objeto da classe Thread com new (como qualquer outra classe)
+- Método start inicia a execução de uma thread independente
+- Método main segue executando
+
+```Java
+class MyThread extends Thread {
+  public void run() {
+    System.out.println("Trabalhando");
+  }
+}
+
+class ThreadApp {
+  public static void main(String[] args) {
+    MyThread t1 = new MyThread();
+    Thread t2 = new MyThread();
+    t1.start();
+    t2.start();
+  }
+}
+```
+
+##### Método start
+
+```Java
+class MyThread extends Thread {
+  public void run() {
+    System.out.println("Trabalhando");
+  }
+}
+
+class ThreadApp {
+  public static void main(String[] args) {
+    MyThread t1 = new MyThread();
+    Thread t2 = new MyThread();
+    t1.start();
+    t2.start();
+  }
+}
+```
+
+##### Método join
+
+```Java
+class ThreadApp {
+  public static void main(String[] args) {
+    MyThread t1 = new MyThread();
+    Thread t2 = new MyThread();
+    t1.start();
+    t2.start();
+    try {
+      t1.join();
+      t2.join();
+    } catch (InterruptedException e) {
+	    // trata interrupcao
+    }
+  }
+}
+```
+
+##### Interface: implements Runnable
+
+```
+class MyRunnable implements Runnable {
+  public void run() {
+    System.out.println("Trabalhando");
+  }
+}
+
+class ThreadApp {
+  public static void main(String[] args) {
+    MyRunnable r = new MyRunnable();
+    Thread t1 = new Thread(r);
+    Thread t2 = new Thread(r);
+    t1.start();
+    t2.start();
+  }
+}
+```
+
 ### 4. Polimorfismo
 Objetos de classes diferentes podem ser tratados como objetos de classe comum.
 
